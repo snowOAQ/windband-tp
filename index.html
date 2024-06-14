@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管樂介紹</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <a href="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81/%E9%A6%96%E9%A0%81.html#" class="logo-container">
+            <img src="logo.png" alt="管樂世界 Logo">
+            <span class="logo-text">管樂天地</span>
+        </a>
+        <h1>管樂介紹</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">銅管</a>
+                  <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/%E9%8A%85%E7%AE%A1/tp/tp.html">小號</a>
+                    <a href="http://127.0.0.1:5500/%E9%8A%85%E7%AE%A1/tb/tb.html">長號</a>
+                    <a href="http://127.0.0.1:5500/%E9%8A%85%E7%AE%A1/hron/horn.html">法國號</a>
+                    <a href="http://127.0.0.1:5500/%E9%8A%85%E7%AE%A1/eup/eup.html">上低音號</a>
+                    <a href="http://127.0.0.1:5500/%E9%8A%85%E7%AE%A1/tuba/tuba.html">低音號</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">木管</a>
+                  <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/%E6%9C%A8%E7%AE%A1/cl/cl.html">單簧管</a>
+                    <a href="http://127.0.0.1:5500/%E6%9C%A8%E7%AE%A1/oboe/oboe.html">雙簧管</a>
+                    <a href="http://127.0.0.1:5500/%E6%9C%A8%E7%AE%A1/flute/flute.html">長笛</a>
+                    <a href="http://127.0.0.1:5500/%E6%9C%A8%E7%AE%A1/sax/sax.html">薩克斯風</a>
+                  </div>
+                </li>
+                <li><a href="http://127.0.0.1:5500/%E6%89%93%E6%93%8A/per.html">打擊</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tp">
+            <h2>小號</h2>
+            <p>小號是一種銅管樂器，以其明亮且響亮的音色聞名。</p>
+            <p>它的主要特徵是其圓柱形的金屬管身，並配有三個活塞，通過調整這些活塞，可以改變音高。</p>
+            <p>小號的音域廣泛，能夠發出高亢而有力的音調，特別適合用於交響樂和軍樂隊中，增添音樂的張力和動感。</p>
+            <p>此外，小號在爵士樂和流行音樂中也有著重要的地位，常常用來演奏獨奏曲或作為旋律的主要樂器。</p>
+            <p>其鮮明的音色和表現力使其成為許多音樂作品中不可或缺的一部分。</p>
+        </section>
+        <section id="gallery">
+            <h2>圖片集</h2>
+            <div class="carousel">
+                <div><img src="tp1.jpg" alt="小號1"></div>
+                <div><img src="tp2.jpg" alt="小號2"></div>
+                <div><img src="tp3.jpg" alt="小號3"></div>
+            </div>
+        </section>
+        <section id="videos">
+            <h2>視頻</h2>
+            <div class="video-carousel">
+                <div class="video-container">
+                    <iframe width="2537" height="1157" src="https://www.youtube.com/embed/vNSnk2dM5Cg" title="the cleanest trumpet solo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe width="2537" height="1157" src="https://www.youtube.com/embed/ZW36qzU0Z6s" title="when the trumpet solo defies gravity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- 添加更多視頻 -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>本網站僅供靜宜大學動態網頁設計課程，繳交作業用，不為其他商業用途 © 2024 管樂介紹</p>
+        <div class="footer-links">
+            <a href="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81/%E9%A6%96%E9%A0%81.html#oboe">返回首頁</a>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+            });
+            $('.video-carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+            });
+        });
+    </script>
+</body>
+</html>
+
